@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/account.css">
+    <title>Create Account</title>
 </head>
 <body>
     <div class="login">
         <div class="form-container">
-            <img src="./assets/Logos/logo_yard_sale.svg" alt="logo"
-            class="logo">
-            <h1 class="title">Create a new password</h1>
-            <p class="subtitle">Enter new password</p>
+            <h1 class="title">Create a new account</h1>
 
             <form action="/" class="form">
-                <label for="passwrd" 
-                class="label">Password</label>
-                <input type="password"
-                id="password" placeholder="*******"
-                class="input input-pass">
+                <label for="name" 
+                class="label">Name</label>
+                <input type="text"
+                id="name" placeholder="Edgar"
+                class="input input-name">
 
-                <label for="new-passwrd" 
+                <label for="email" 
+                class="label">Email</label>
+                <input type="text"
+                id="email" placeholder="example@email.com"
+                class="input input-email">
+
+                <label for="passwrd" 
                 class="label">Password</label>
                 <input type="password"
                 id="new-password" 
@@ -31,7 +34,7 @@
                 class="input input-pass">
 
                 <input type="submit"
-                value="Confirm" 
+                value="Create" 
                 class="primary-button login-button">
             </form>
         </div>
