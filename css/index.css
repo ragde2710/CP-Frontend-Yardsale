@@ -1,78 +1,56 @@
-.login {
-    width: 100%;
-    height: 100vh;
+.cards-container {
     display: grid;
-    place-items: center;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+}
+.product-card {
+    width: 240px;
 }
 
-.form-container{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 300px;
+.product-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
-.form {
+.product-info{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
 }
 
-.logo {
-    width: 150px;
-    margin-bottom: 48px;
-    justify-self: center;
-    display: none;
+.product-info figure img {
+    width: 35px;
+    height: 35px;
 }
 
-.title {
-    font-size: var(--lg);
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-.subtitle {
-    color: var(--very-light-pink);
-    font-size: var(--md);
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 32px;
-    text-align: center;
-}
-
-.label {
-    font-size: var(--sm);
+.product-info div p:nth-child(1){
     font-weight: bold;
+    font-size: var(--md);
     margin-bottom: 4px;
 }
 
-.input {
-    background-color: var(--text-input-field);
-    border: none;
-    border-radius: 8px;
-    height: 30px;
-    font-size: var(--md);
-    padding: 6px;
-    margin-bottom: 12px;
-}
-
-.primary-button {
-    background-color: var(--hospital-green);
-    border-radius: 8px;
-    border: none;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 50px;
-}
-
-.login-button {
-    margin-top: 14px;
-    margin-bottom: 30px;
+.product-info div p:nth-child(2){
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
 }
 
 @media (max-width: 640px){
-    .logo{
-        display: block;
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 140px);
     }
+    .product-card {
+        width: 140px;
+    }
+    .product-card img {
+        width: 140px;
+        height: 140px;
+    }
+
 }
